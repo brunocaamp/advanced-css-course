@@ -14,15 +14,93 @@
     </head>
     <body>
         <div class="hero">
-
+            <div class="logo-box">
+                <img src="img/logo-white.png" alt="" class="logo">
+            </div>
+            <div class="text-box">
+                <h1>
+                    <span class="title-main">outdoors</span>
+                    <span class="title-sub">is where life happens</span>
+                </h1>
+                <a href="#" class="btn btn-white">Discover Our Tours</a>
+            </div>
         </div>
         
 
     <style>
         * {
+            font-family: Lato;
             box-sizing: border-box;
             padding: 0;
             margin: 0;
+        }
+
+        .btn:visited,
+        .btn:link {            
+            padding: 20px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-top: 40px;
+            position: relative;
+            transition: all 0.2s ease-in-out;            
+        }
+        
+        .btn:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.01) translateY(-7px);
+        }
+        
+        .btn:active {
+            box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+            transform: scale(1) translateY(-3px);
+        }
+
+        .btn-white {
+            background-color: white;
+            color: rgba(0, 255, 98, 1);
+        }
+
+        .text-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -70%);
+            
+        }
+
+        .title-main {
+            color: white;
+            display: block;
+            text-transform: uppercase;
+            font-size: 68px;
+            letter-spacing: 38px;
+            font-weight: 500;
+        }
+
+        .title-sub  {
+            color: white;
+            display: block;
+            font-size: 21px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+        }
+
+        .logo {
+            width: 70px;
+        }
+
+        .logo-box {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            
         }
 
         .hero {            
@@ -39,7 +117,7 @@
             z-index: -1;
             inset: 0;
             position: absolute;
-            background-image: linear-gradient(304deg,rgba(0, 242, 153, 0.6) 0%,rgba(0, 122, 73, 0.6) 100%);            
+            background-image: linear-gradient(120deg,rgba(0, 255, 98, 0.7) 0%,rgba(0, 122, 73, 0.8) 100%);            
             
         }
 
