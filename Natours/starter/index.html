@@ -13,7 +13,41 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="hero">
+
+        </div>
         
-        
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .hero {            
+            background-image: url("img/hero.jpg");
+            min-block-size: 95vb;
+            z-index: 1;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            clip-path: polygon(0% 0%, 0% 100%, 100% 80%, 100% 0%);
+        }
+        .hero::before {  
+            content:"";        
+            z-index: -1;
+            inset: 0;
+            position: absolute;
+            background-image: linear-gradient(304deg,rgba(0, 242, 153, 0.6) 0%,rgba(0, 122, 73, 0.6) 100%);            
+            
+        }
+
+        body {
+            margin: 30px;
+            background-color: rgb(240, 238, 238);
+        }
+
+    </style>
     </body>
 </html>
